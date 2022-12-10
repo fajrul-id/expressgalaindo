@@ -7,7 +7,7 @@ const categories_route = require("./app/categories/routes/CategoriesRoute");
 const images_route = require("./app/images/routes/ImagesRoute");
 const navigation_route = require("./app/navigation/routes/NavigationRoute");
 // initialization
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 const app = express();
 
 // middlewares
@@ -24,6 +24,4 @@ app.use(navigation_route);
 app.use(categories_route);
 app.use(images_route);
 
-app.listen(PORT, () => {
-  console.info(`Server running at PORT ${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));

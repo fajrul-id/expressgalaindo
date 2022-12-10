@@ -1,11 +1,11 @@
 {
   "name": "api-prisma-gala-indo",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "fajrul.id",
   "license": "ISC",
@@ -15,5 +15,15 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "prisma": "^4.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fajrul-id/expressgalaindo.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/fajrul-id/expressgalaindo/issues"
+  },
+  "homepage": "https://github.com/fajrul-id/expressgalaindo#readme",
+  "description": ""
 }
